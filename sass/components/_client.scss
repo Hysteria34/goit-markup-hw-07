@@ -1,0 +1,47 @@
+.client{
+    padding: 94px 0px;
+
+    & h2{
+    text-align: center;
+    margin: 0%;
+    padding-bottom: 50px;
+    }
+}
+.client__item{
+    transition: $animation;
+
+    & a{
+        display: block;
+        width: 170px;
+        height: 92px;
+        border: 1px solid #AFB1B8;
+        box-sizing: border-box;
+        border-radius: $button-radius;
+    
+        transition: $animation;
+    }
+
+    & svg{
+        display: block; 
+        margin: auto;
+        padding-top: 20px;
+        fill: #AFB1B8;
+    
+        transition: $animation;
+    }
+}
+.client__list{
+    @extend .list; 
+    display: flex;
+    justify-content: center; 
+}
+.client__item a:hover{
+    border-color:$hover-color;
+}
+.client__item:hover svg{
+    fill:$hover-color;
+}
+.client__item:not(:last-child){
+    margin-right: $margin;
+}
+

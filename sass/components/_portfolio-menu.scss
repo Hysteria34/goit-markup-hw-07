@@ -1,0 +1,35 @@
+.portfolio__button{
+    display: flex;
+    justify-content: center;
+    margin-right: 8px;
+    padding-bottom: 50px;
+    padding-top: 94px;
+}
+.portfolio__menu {
+
+    & li{
+    @extend .list; 
+    display: inline;
+    }
+
+    & button{
+        @extend .normal-text;
+        @extend .button; 
+        padding-inline: 22px;
+        background-color: #f5f3fa;
+        color: $h-textcolor;
+        font-weight: 500;
+        line-height: 162%;
+        text-align: center;
+        
+        border: none;
+        border-radius: $button-radius;
+    
+        transition: $animation;
+    }
+
+    & button:hover, button:focus{
+        background-color: $hover-color;
+        color: $background-color;
+    }
+}

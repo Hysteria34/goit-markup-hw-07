@@ -1,0 +1,67 @@
+.team{
+    padding: 94px 0;
+    background-color: #F5F4FA;
+    width: 100%;
+
+    & h2{
+    @extend .h-title;
+    }
+
+
+    & ul{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+.team h3{
+    @extend .normal-text;
+        font-weight: 500;
+        color: $h-textcolor;
+        text-align: center;
+}
+.team p{
+    @extend .normal-text; 
+    font-weight: normal;
+    color: $p-textcolor;
+    text-align: center;
+}
+
+.team__box{
+    background-color: $background-color;
+    @extend .list; 
+    display: inline;
+    width: 270px;
+    height: 428px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    &:not(:last-child) {
+        margin-right: $margin;
+    }
+}
+.team__container{
+    display: flex;
+    margin: 0px;
+}
+
+.team__list{
+    @extend .list; 
+}
+
+.team__link button{
+    @extend .media-icon;
+    background-color: $background-color;
+
+    & svg{
+        fill: $svg-fill; 
+    }
+    
+    &:hover, :focus{
+        background-color: $hover-color;
+    }
+
+    &:hover svg{
+        fill: $background-color;
+    }
+}

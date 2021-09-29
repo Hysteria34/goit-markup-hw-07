@@ -1,0 +1,40 @@
+.hat{
+    background-image:linear-gradient( to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url(../images/Hat-img.jpg);
+    background-color: #2F303A;
+    padding: 200px 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    & h1{
+        @extend .h-title;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 136%;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: $background-color;
+        margin-top: 0px;
+    }
+}
+.hat button{
+    @extend .normal-text; 
+    @extend .button;
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+    line-height: 187%;
+    border: none;
+    border-radius: $button-radius;
+    letter-spacing: 0.06em;
+    color: $background-color;
+    background: $hover-color;
+    transition: $animation;
+    
+    margin-left: 45%;
+
+    &:hover,:focus {
+        background: $mainbutton-hover;
+    }
+}
